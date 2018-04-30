@@ -5,7 +5,7 @@ BxLayout provides a beautiful interface for performing iOS autolayout in code.
 
 ### Getting Started
 Suppose you have a text field `textField` and a label `label` that are subviews of a view `view`:
- * You want to position the text field in the middle of the veiw and it should cover the view to the margins.
+ * You want to position the text field in the middle of the view and it should cover the view to the margins.
  * You want to put the label below the text field with a margin of 5 points.
  * You want to align the leading edge of the text field with the one of the label.
  
