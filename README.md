@@ -63,6 +63,8 @@ Possible values for the set of equalities are intuitive, there are even some com
 ```swift
 textField.follow(superview, on: [.centerY, .marginHorizontal])
 ```
+The default set of equalities is set to all edges.
+
 The edge insets are given as `EdgeInsets(leading:trailing:top:bottom:)` where any combination of parameters may be used. They default to zero on all edges.
 
 The stack function takes any number of parameters. The sequence of parameters is subject to the following constraints:
