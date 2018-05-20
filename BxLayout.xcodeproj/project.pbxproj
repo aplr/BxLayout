@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		516785AFBA131055A687DC0D /* libPods-BxLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A56D692AF0ECB5C5FA30E7 /* libPods-BxLayout.a */; };
-		526D347F153AB8BDA8814BC3 /* libPods-BxLayoutTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 627E41B1BF81B5CD3D8B76BE /* libPods-BxLayoutTests.a */; };
+		62E29FF445A3AE9C18FE5EB4 /* Pods_BxLayoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E55E40E2D847D0EC9F13E88C /* Pods_BxLayoutTests.framework */; };
 		C931C23A207DFFF500A52BEA /* Layoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931C239207DFFF400A52BEA /* Layoutable.swift */; };
 		C9DED0F5207CBF6B003F2E35 /* BxLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DED0EB207CBF6B003F2E35 /* BxLayout.framework */; };
 		C9DED0FA207CBF6B003F2E35 /* BxLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DED0F9207CBF6B003F2E35 /* BxLayoutTests.swift */; };
@@ -22,6 +21,7 @@
 		C9DED113207CC098003F2E35 /* ViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DED10F207CC098003F2E35 /* ViewLayout.swift */; };
 		C9DED114207CC098003F2E35 /* ViewLayoutSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DED110207CC098003F2E35 /* ViewLayoutSet.swift */; };
 		C9DED117207CC0C7003F2E35 /* BxUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DED116207CC0C7003F2E35 /* BxUtility.framework */; };
+		E231F7F0A20A86020DFDA858 /* Pods_BxLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC56E5BF7D6275CC89D7DADE /* Pods_BxLayout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		627E41B1BF81B5CD3D8B76BE /* libPods-BxLayoutTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BxLayoutTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73594211377369D7BF903F41 /* Pods-BxLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BxLayout.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BxLayout/Pods-BxLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		88EB3AC968CBFC819CE55355 /* Pods-BxLayoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BxLayoutTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BxLayoutTests/Pods-BxLayoutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8FFD806EE0EC8E87B82E5602 /* Pods-BxLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BxLayout.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BxLayout/Pods-BxLayout.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,7 +56,8 @@
 		C9DED110207CC098003F2E35 /* ViewLayoutSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLayoutSet.swift; sourceTree = "<group>"; };
 		C9DED116207CC0C7003F2E35 /* BxUtility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BxUtility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EA4687207E395B00EB398F /* libPods-BxUtility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-BxUtility.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8A56D692AF0ECB5C5FA30E7 /* libPods-BxLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BxLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC56E5BF7D6275CC89D7DADE /* Pods_BxLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BxLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55E40E2D847D0EC9F13E88C /* Pods_BxLayoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BxLayoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9DED117207CC0C7003F2E35 /* BxUtility.framework in Frameworks */,
-				516785AFBA131055A687DC0D /* libPods-BxLayout.a in Frameworks */,
+				E231F7F0A20A86020DFDA858 /* Pods_BxLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9DED0F5207CBF6B003F2E35 /* BxLayout.framework in Frameworks */,
-				526D347F153AB8BDA8814BC3 /* libPods-BxLayoutTests.a in Frameworks */,
+				62E29FF445A3AE9C18FE5EB4 /* Pods_BxLayoutTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +134,8 @@
 			children = (
 				C9EA4687207E395B00EB398F /* libPods-BxUtility.a */,
 				C9DED116207CC0C7003F2E35 /* BxUtility.framework */,
-				E8A56D692AF0ECB5C5FA30E7 /* libPods-BxLayout.a */,
-				627E41B1BF81B5CD3D8B76BE /* libPods-BxLayoutTests.a */,
+				CC56E5BF7D6275CC89D7DADE /* Pods_BxLayout.framework */,
+				E55E40E2D847D0EC9F13E88C /* Pods_BxLayoutTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -192,6 +192,7 @@
 				C9DED0F0207CBF6B003F2E35 /* Sources */,
 				C9DED0F1207CBF6B003F2E35 /* Frameworks */,
 				C9DED0F2207CBF6B003F2E35 /* Resources */,
+				83661E75752E9029D212F5A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,6 +278,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83661E75752E9029D212F5A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-BxLayoutTests/Pods-BxLayoutTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BxLayoutTests/Pods-BxLayoutTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		96F7C2D4666B8594DA23FE91 /* [CP] Check Pods Manifest.lock */ = {
@@ -466,11 +485,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BxLayout/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.borchero.BxLayout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -494,11 +509,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BxLayout/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.borchero.BxLayout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -515,11 +526,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BEHQZ5DW9;
 				INFOPLIST_FILE = BxLayoutTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.borchero.BxLayoutTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -535,11 +542,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BEHQZ5DW9;
 				INFOPLIST_FILE = BxLayoutTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.borchero.BxLayoutTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

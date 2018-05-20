@@ -165,11 +165,11 @@ public final class ViewLayout {
         
         public static let edgesVertical: MarginOptions = [.top, .bottom]
         public static let edgesHorizontal: MarginOptions = [.leading, .trailing]
-        public static let edges = MarginOptions(rawValue: 0xf)
+        public static let edges: MarginOptions = [.edgesVertical, .edgesHorizontal]
         
         public static let marginsVertical: MarginOptions = [.marginTop, .marginBottom]
         public static let marginsHorizontal: MarginOptions = [.marginLeading, .marginTrailing]
-        public static let margins = MarginOptions(rawValue: 0xf0)
+        public static let margins: MarginOptions = [.marginsVertical, .marginsHorizontal]
     }
     
     @discardableResult
@@ -205,6 +205,13 @@ public final class ViewLayout {
         } else if margins.contains(.marginBottom) {
             self.bottom == layout.margin.bottom - insetBy.bottom
         }
+        return self
+    }
+    
+    @discardableResult
+    public func follow(centerOf layout: ViewLayout, offsetBy offset: CGPoint = .zero) -> ViewLayout {
+        self.center.x == layout.center.x + offset.x
+        self.center.y == layout.center.y + offset.y
         return self
     }
     
