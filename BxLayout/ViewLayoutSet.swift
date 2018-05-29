@@ -16,18 +16,30 @@ import UIKit
 
 public final class ViewLayoutSet {
     
+    private let superview: UIView
     private let viewLayouts: [ViewLayout]
     
     internal init(forSuperview superview: UIView, views: [UIView]) {
+        self.superview = superview
         viewLayouts = [ViewLayout(describing: superview, isSuperview: true)] + views.map { $0.layout }
     }
     
-    public func apply() {
+    public func apply(once: Bool = false) {
         viewLayouts.dropFirst().forEach {
             $0.view.translatesAutoresizingMaskIntoConstraints = false
         }
         viewLayouts.forEach {
             NSLayoutConstraint.activate($0.constraints)
+        }
+        if once {
+            superview.setNeedsLayout()
+            superview.layoutIfNeeded()
+            viewLayouts.forEach {
+                NSLayoutConstraint.deactivate($0.constraints)
+            }
+            viewLayouts.dropFirst().forEach {
+                $0.view.translatesAutoresizingMaskIntoConstraints = true
+            }
         }
     }
     
