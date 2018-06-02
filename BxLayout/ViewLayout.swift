@@ -227,27 +227,6 @@ public final class ViewLayout {
     }
 }
 
-public func stack(_ layouts: Any..., orientation: ViewLayout.Orientation = .vertical) {
-    assert(layouts.count >= 2, "Too few layout parameters.")
-    assert(!layouts.enumerated().contains { param in
-        if param.offset == 0 || param.offset == layouts.count - 1 { return !(param.element is ViewLayout) }
-        else if param.element is CGFloat { return layouts[param.offset - 1] is CGFloat }
-        else { return !(param.element is ViewLayout && !(param.element as! ViewLayout).isSuperview) }
-        }, "Invalid layout parameters.")
-    
-    var index = 0
-    while index < layouts.count - 1 {
-        let layout1 = layouts[index] as! ViewLayout
-        let spacing = layouts[index + 1] as? CGFloat
-        let layout2 = spacing == nil ? layouts[index + 1] as! ViewLayout : layouts[index + 2] as! ViewLayout
-        switch orientation {
-        case .horizontal: layout2.leading == (layout1.isSuperview ? layout1.leading : layout1.trailing) + (spacing ?? 0)
-        case .vertical: layout1.bottom == (layout2.isSuperview ? layout2.bottom : layout2.top) - (spacing ?? 0)
-        }
-        index += spacing == nil ? 1 : 2
-    }
-}
-
 extension NSLayoutConstraint {
     
     fileprivate func adding(to layout: ViewLayout) -> NSLayoutConstraint {

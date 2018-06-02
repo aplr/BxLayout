@@ -21,6 +21,7 @@
 		C9DED113207CC098003F2E35 /* ViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DED10F207CC098003F2E35 /* ViewLayout.swift */; };
 		C9DED114207CC098003F2E35 /* ViewLayoutSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DED110207CC098003F2E35 /* ViewLayoutSet.swift */; };
 		C9DED117207CC0C7003F2E35 /* BxUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DED116207CC0C7003F2E35 /* BxUtility.framework */; };
+		C9F7674120C2CA610051B374 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7674020C2CA610051B374 /* Stack.swift */; };
 		E231F7F0A20A86020DFDA858 /* Pods_BxLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC56E5BF7D6275CC89D7DADE /* Pods_BxLayout.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		C9DED110207CC098003F2E35 /* ViewLayoutSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLayoutSet.swift; sourceTree = "<group>"; };
 		C9DED116207CC0C7003F2E35 /* BxUtility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BxUtility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EA4687207E395B00EB398F /* libPods-BxUtility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-BxUtility.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9F7674020C2CA610051B374 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		CC56E5BF7D6275CC89D7DADE /* Pods_BxLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BxLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55E40E2D847D0EC9F13E88C /* Pods_BxLayoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BxLayoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 				C9DED10E207CC098003F2E35 /* LayoutAttribute.swift */,
 				C9DED10D207CC098003F2E35 /* LayoutPriority.swift */,
 				C9DED10F207CC098003F2E35 /* ViewLayout.swift */,
+				C9F7674020C2CA610051B374 /* Stack.swift */,
 				C9DED110207CC098003F2E35 /* ViewLayoutSet.swift */,
 				C9DED0EF207CBF6B003F2E35 /* Info.plist */,
 			);
@@ -325,6 +328,7 @@
 			files = (
 				C9DED113207CC098003F2E35 /* ViewLayout.swift in Sources */,
 				C9DED10C207CC05F003F2E35 /* Layout.swift in Sources */,
+				C9F7674120C2CA610051B374 /* Stack.swift in Sources */,
 				C9DED112207CC098003F2E35 /* LayoutAttribute.swift in Sources */,
 				C931C23A207DFFF500A52BEA /* Layoutable.swift in Sources */,
 				C9DED114207CC098003F2E35 /* ViewLayoutSet.swift in Sources */,
