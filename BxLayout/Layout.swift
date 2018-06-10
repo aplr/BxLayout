@@ -24,6 +24,10 @@ extension UIView {
         return ViewLayoutSet(forSuperview: self, views: [subview] + others)
     }
     
+    public func just() -> ViewLayoutSet {
+        return ViewLayoutSet(forSuperview: self, views: [])
+    }
+    
     public func with(_ view: UIView, _ others: UIView...) -> ViewLayoutSet {
         return ViewLayoutSet(forSuperview: self, views: [view] + others)
     }
