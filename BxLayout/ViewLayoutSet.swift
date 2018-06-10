@@ -43,6 +43,11 @@ public final class ViewLayoutSet {
         }
     }
     
+    public func layout(_ execute: (ViewLayout) -> Void) -> ViewLayoutSet {
+        execute(viewLayouts[0])
+        return self
+    }
+    
     public func layout(_ execute: (ViewLayout, ViewLayout) -> Void) -> ViewLayoutSet {
         execute(viewLayouts[0], viewLayouts[1])
         return self
